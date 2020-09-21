@@ -69,7 +69,12 @@ module.exports = function(file, opt) {
 
 		// add file to concat instance
 		let contentHash = hasha(file.contents, {algorithm: 'md5'})
-		let line = `\n\t'${file.relative}' => '${contentHash}',`;
+		let filePath = file.relative;
+		if(opt.forUrl)
+		{
+			filePath = filePath.replace('\\', '/');
+		}
+		let line = `\n\t'${filePath}' => '${contentHash}',`;
 		// console.log([file.base, file.relative, file.cwd]);
 		concat.add(file.relative, line);
 		cb();
