@@ -1,0 +1,40 @@
+{
+  "name": "gulp-file-version-info",
+  "description": "Generates php file with that can be used to generate urls with versioning based on content hash",
+  "version": "0.0.1",
+  "repository": "GroM/gulp-file-version-info",
+  "author": "CodeShield <grom@codeshield.eu>",
+  "homepage": "https://github.com/GroM/gulp-file-version-info#readme",
+  "bugs": "https://github.com/GroM/gulp-file-version-info/issues",
+  "repository": "github:GroM/gulp-file-version-info",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "gulpplugin"
+  ],
+  "dependencies": {
+    "concat-with-sourcemaps": "^1.0.0",
+    "hasha": "^5.2.0",
+    "through2": "^2.0.0",
+    "vinyl": "^2.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.0.0",
+    "mocha-lcov-reporter": "^1.2.0",
+    "should": "^11.0.0",
+    "stream-array": "^1.0.1",
+    "stream-assert": "^2.0.1"
+  },
+  "scripts": {
+    "test": "mocha",
+    "coverage": "istanbul cover _mocha"
+  },
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "license": "MIT"
+}
