@@ -72,7 +72,7 @@ module.exports = function(file, opt) {
 		let filePath = file.relative;
 		if(opt.forUrl)
 		{
-			filePath = filePath.replace('\\', '/');
+			filePath = filePath.replace(/\\/g, '/');
 		}
 		let line = `\n\t'${filePath}' => '${contentHash}',`;
 		// console.log([file.base, file.relative, file.cwd]);

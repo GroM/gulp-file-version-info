@@ -1,7 +1,7 @@
 {
   "name": "gulp-file-version-info",
   "description": "Generates php file with that can be used to generate urls with versioning based on content hash",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": "GroM/gulp-file-version-info",
   "author": "CodeShield <grom@codeshield.eu>",
   "homepage": "https://github.com/GroM/gulp-file-version-info#readme",
